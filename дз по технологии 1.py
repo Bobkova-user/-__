@@ -5,4 +5,6 @@ elif x == 0:
     y = 5
 else: 
     y = x ** 2
-print(f"y равен {y}")
+x = float(input('Введите х: '))
+y = primer(x)
+print(f"Игрек равен: {y}")
