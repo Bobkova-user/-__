@@ -3,11 +3,15 @@ def guess_number():
     high = 100
     tries = 0
     print("Загадай число от 1 до 100, а я его угадаю.")
+    
+    
     while low <= high:
         mid = (low + high) // 2 
         tries += 1 
         print(f"Ваше число равно, меньше или больше, чем {mid}?") 
         response = input("Введите 1 (равно), 2 (больше), 3 (меньше): ") 
+       
+        
         if response == '1': 
             print(f"Я угадала ваше число {mid} за {tries} попыток.") 
             return 
